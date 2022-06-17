@@ -1,0 +1,12 @@
+microsoft.entity.frameworkcore.sqlserver
+microsoft.entityFrameworkCore.Tools
+dotnet ef add migrations createdatabas
+dotnet ef update database
+
+
+add-migration migrationname
+update-database
+
+
+crud işlemlerini yapan item == controller->add Scaffolded ıtem->
+mvc-> Add MVC Controller with views,using entity framework

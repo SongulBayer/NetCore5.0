@@ -1,0 +1,24 @@
+﻿@using EntityLayer.Concrate
+@model List<Category>
+@{
+    Layout = null;
+}
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+       <tr>
+           <td>@item.CategoryId</td>
+           <td>@item.CategoryName</td>
+           <td>@item.CategoryDescription</td>
+           <td>@item.CategoryStatus</td>
+       </tr>
+    }
+</table>
