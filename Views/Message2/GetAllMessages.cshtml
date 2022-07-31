@@ -1,0 +1,32 @@
+﻿@using EntityLayer.Concrate
+@model List<Message2>
+@{
+    ViewData["Title"] = "GetAllMessages";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Tüm Mesajlar</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Mesaj Id</th>
+        <th>Gönderen Kişi</th>
+        <th>Oluşturulma Tarihi</th>
+        <th>Detay</th>
+        <th>Mesajı </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MessageId</td>
+            <td>@item.SenderWriter.WriterName</td>
+            <td>@item.MessageDate</td>
+            <td>@item.MessageDetails</td>
+           <td><a href="/Message2/MessageDetails/@item.MessageId" class="btn btn-info">Mesajı Gör</a></td> 
+        </tr>
+    }
+
+</table>
+
+
+

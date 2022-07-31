@@ -1,0 +1,21 @@
+﻿@model EntityLayer.Concrate.Message2
+@{
+    ViewData["Title"] = "MessageDetails";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>Mesajın Detayları</h1>
+
+@Html.Label("Mesaj Gönderen Kişi")
+@Html.LabelFor(x=>x.SenderWriter.WriterName,new {@class="form-control"})
+<br />
+@Html.Label("Mesaj Başlığı")
+@Html.LabelFor(x=>x.Subject, new { @class = "form-control" })
+<br />
+@Html.Label("Mesaj İçeriği")
+@Html.LabelFor(x=>x.Subject, new { @class = "form-control" })
+
+<button class="btn btn-success">Mesajlara Dön</button>
+
+
+
