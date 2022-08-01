@@ -24,7 +24,6 @@ namespace NetCore5._0.Controllers
         public IActionResult MessageDetails(int id)
         {
             Context c = new Context();
-            
             var val = mm.TgetByid(id);
             return View(val);
         }

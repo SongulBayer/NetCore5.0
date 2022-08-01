@@ -14,7 +14,7 @@ namespace NetCore5._0.ViewComponents.Writer
 
         public IViewComponentResult Invoke()
         {
-            var values = bm.GetBlogListByWriter(8);
+            var values = bm.GetListWithCategoryByWriter(8);
             return View(values);
         }
     }

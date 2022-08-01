@@ -3,14 +3,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BusinessLayer.Concrate;
+using DataAccessLayer.EntityFramework;
 
 namespace NetCore5._0.Controllers
 {
     public class Category : Controller
     {
+        CategoryManager cm = new CategoryManager(new EfCategoryRepository());
         public IActionResult Index()
         {
-            return View();
+            var values = cm.getList();
+            return View(values);
         }
     }
 }

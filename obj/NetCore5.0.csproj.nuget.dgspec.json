@@ -51,6 +51,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.9, )"
@@ -273,6 +281,14 @@
         "net5.0": {
           "targetAlias": "netcoreapp5.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.9, )"
@@ -292,6 +308,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[8.4.3, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[8.4.3, )"
             }
           },
           "imports": [
