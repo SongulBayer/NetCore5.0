@@ -1,0 +1,16 @@
+﻿@model NetCore5._0.Controllers.Class1
+@{
+    ViewData["Title"] = "UpdateEmployee";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<form method="post">
+
+    <label>ID</label>
+    @Html.TextBoxFor(x=>x.Id, new {@class="form-control" })
+    <br />
+    <label>Isim</label>
+    @Html.TextBoxFor(x=>x.Name, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-outline-success">Güncelle</button>
+</form>
